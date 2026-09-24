@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="余磊烨的求职个人主页，Java后端开发实习生方向" />
+    <title>余磊烨 - Java后端开发实习生求职主页</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- 顶部 Banner -->
+    <header class="hero">
+        <div class="hero-bg">
+            <img src="assets/banner.jpg" alt="Banner" />
+        </div>
+
+        <div class="profile-card">
+            <div class="avatar">
+                <img src="assets/avatar.jpg" alt="余磊烨头像" />
+            </div>
+
+            <div class="profile-info">
+                <h1>余磊烨</h1>
+                <p class="job-title">Java后端开发实习生 · 求职中</p>
+                <p class="profile-desc">
+                    福州墨尔本理工职业学院 计算机应用技术专业学生，具备Java后端、MySQL数据库和Web前端基础，
+                    正在围绕SSM框架与后端接口开发持续学习。
+                </p>
+
+                <div class="contact-row">
+                    <span class="contact-item">📍 福州</span>
+                    <span class="contact-item">📧 1609840@qq.com</span>
+                    <button class="btn-copy" onclick="copyEmail()">复制邮箱</button>
+                    <a class="btn-primary" href="assets/resume.pdf" download="余磊烨_Java后端开发实习生简历.pdf">下载简历</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 导航 -->
+    <nav class="nav-bar">
+        <a href="#skills">专业技能</a>
+        <a href="#projects">项目经历</a>
+        <a href="#activities">校园实践</a>
+        <a href="#education">教育背景</a>
+        <a href="#about">关于我</a>
+    </nav>
+
+    <main>
+        <!-- 专业技能 -->
+        <section id="skills" class="card">
+            <h2>专业技能</h2>
+            <div class="skill-grid">
+                <div class="skill-block">
+                    <h3>后端开发</h3>
+                    <div class="tag-list">
+                        <span class="tag">Java基础</span>
+                        <span class="tag">面向对象编程</span>
+                        <span class="tag">Spring</span>
+                        <span class="tag">SpringMVC</span>
+                        <span class="tag">MyBatis</span>
+                        <span class="tag">接口开发</span>
+                    </div>
+                </div>
+
+                <div class="skill-block">
+                    <h3>数据库</h3>
+                    <div class="tag-list">
+                        <span class="tag">MySQL</span>
+                        <span class="tag">表结构设计</span>
+                        <span class="tag">SQL编写</span>
+                        <span class="tag">基础查询优化</span>
+                    </div>
+                </div>
+
+                <div class="skill-block">
+                    <h3>前端与工具</h3>
+                    <div class="tag-list">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Postman</span>
+                        <span class="tag">Python基础</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 项目经历 -->
+        <section id="projects" class="card">
+            <h2>项目经历</h2>
+
+            <article class="project-item">
+                <div class="project-head">
+                    <h3>SSM框架整合后端练习项目</h3>
+                    <span class="project-date">2026.05</span>
+                </div>
+                <p class="project-role">独立开发者</p>
+                <ul class="project-list">
+                    <li>独立搭建 Spring + SpringMVC + MyBatis 开发环境，完成基础配置与分层结构设计。</li>
+                    <li>实现用户管理模块的基础业务接口，包括查询、新增、修改和删除等功能。</li>
+                    <li>使用 Postman 完成接口测试，确保接口请求与返回结果符合预期。</li>
+                </ul>
+                <div class="project-highlight">
+                    <span>代码约 500 行</span>
+                    <span>7 个业务接口</span>
+                    <span>接口测试通过率 100%</span>
+                </div>
+            </article>
+
+            <article class="project-item">
+                <div class="project-head">
+                    <h3>Java学生成绩管理系统</h3>
+                    <span class="project-date">2025.06</span>
+                </div>
+                <p class="project-role">独立开发者</p>
+                <ul class="project-list">
+                    <li>基于 Java Swing 开发桌面管理系统，完成学生信息与成绩的录入、查询、修改、删除功能。</li>
+                    <li>使用 JDBC 连接数据库，实现界面操作与数据存储的联动。</li>
+                    <li>按课程大作业要求完成功能演示与结果验收。</li>
+                </ul>
+                <div class="project-highlight">
+                    <span>代码约 350 行</span>
+                    <span>功能模块完整</span>
+                    <span>课程作业评级良好</span>
+                </div>
+            </article>
+
+            <article class="project-item">
+                <div class="project-head">
+                    <h3>图书借阅管理数据库系统</h3>
+                    <span class="project-date">2026.03</span>
+                </div>
+                <p class="project-role">独立开发者</p>
+                <ul class="project-list">
+                    <li>完成数据库需求分析、表结构设计与业务流程梳理。</li>
+                    <li>设计图书、读者、借阅等核心数据表，并编写 SQL 脚本完成建表与数据操作。</li>
+                    <li>通过课程设计报告整理设计思路、表结构说明与业务实现过程。</li>
+                </ul>
+                <div class="project-highlight">
+                    <span>6 张核心数据表</span>
+                    <span>SQL 脚本约 150 行</span>
+                    <span>课程设计报告 86 分</span>
+                </div>
+            </article>
+
+            <article class="project-item">
+                <div class="project-head">
+                    <h3>个人静态博客页面</h3>
+                    <span class="project-date">2025.10</span>
+                </div>
+                <p class="project-role">独立开发者</p>
+                <ul class="project-list">
+                    <li>使用 HTML、CSS 和原生 JavaScript 开发个人静态博客页面。</li>
+                    <li>采用 Flex 布局实现页面结构整理与移动端适配。</li>
+                    <li>完成多个页面的基础布局、导航交互与样式统一。</li>
+                </ul>
+                <div class="project-highlight">
+                    <span>8 个页面</span>
+                    <span>代码约 400 行</span>
+                    <span>实训验收 89 分</span>
+                </div>
+            </article>
+
+            <article class="project-item">
+                <div class="project-head">
+                    <h3>Python奶茶店点单系统</h3>
+                    <span class="project-date">2024.12</span>
+                </div>
+                <p class="project-role">独立开发者</p>
+                <ul class="project-list">
+                    <li>基于 Python 基础语法开发控制台点单程序。</li>
+                    <li>实现菜单展示、点单、优惠判断、结算和小票输出流程。</li>
+                    <li>通过课程设计验收，程序可正常运行并完成演示。</li>
+                </ul>
+                <div class="project-highlight">
+                    <span>代码约 200 行</span>
+                    <span>功能流程完整</span>
+                    <span>课程验收 90 分</span>
+                </div>
+            </article>
+        </section>
+
+        <!-- 校园实践 -->
+        <section id="activities" class="card">
+            <h2>校园实践</h2>
+
+            <article class="activity-item">
+                <div class="activity-head">
+                    <h3>校自律委员会小律工作室干事</h3>
+                    <span class="activity-date">2024.09 - 2025.06</span>
+                </div>
+                <ul class="activity-list">
+                    <li>参与工作室日常运营、校园法治活动策划与内容素材整理。</li>
+                    <li>协助完成活动方案讨论、文案整理、宣传素材制作与现场执行。</li>
+                    <li>配合工作室完成面向学生的活动发布与信息收集工作。</li>
+                </ul>
+                <div class="activity-highlight">
+                    <span>参与活动 4 场</span>
+                    <span>整理素材 10 余份</span>
+                    <span>覆盖学生 200 余人次</span>
+                </div>
+            </article>
+
+            <article class="activity-item">
+                <div class="activity-head">
+                    <h3>校园公众号文章发表</h3>
+                    <span class="activity-date">2025.03</span>
+                </div>
+                <ul class="activity-list">
+                    <li>作为撰稿人参与校园公众号内容建设，完成选题构思与文章撰写。</li>
+                    <li>配合编辑完成内容修改、格式调整与发布前核对。</li>
+                    <li>文章在校园公众号发布后，获得学生阅读与反馈。</li>
+                </ul>
+                <div class="activity-highlight">
+                    <span>发表原创文章 1 篇</span>
+                    <span>单篇阅读量 800+</span>
+                    <span>公众号历史推送可查</span>
+                </div>
+            </article>
+
+            <article class="activity-item">
+                <div class="activity-head">
+                    <h3>闲鱼个人闲置数码店铺运营</h3>
+                    <span class="activity-date">2024.10 - 至今</span>
+                </div>
+                <ul class="activity-list">
+                    <li>自主运营个人闲鱼账号，负责数码商品上架、详情编写与买家咨询回复。</li>
+                    <li>完成商品拍照、信息整理、订单沟通、发货与售后对接。</li>
+                    <li>在交易过程中培养信息整理、沟通表达与问题处理能力。</li>
+                </ul>
+                <div class="activity-highlight">
+                    <span>上架商品 20 余件</span>
+                    <span>成功成交 15 单</span>
+                    <span>好评率 100%</span>
+                </div>
+            </article>
+        </section>
+
+        <!-- 教育背景 -->
+        <section id="education" class="card">
+            <h2>教育背景</h2>
+            <div class="edu-item">
+                <div class="edu-head">
+                    <h3>福州墨尔本理工职业学院</h3>
+                    <span class="edu-date">2024.09 - 2027.06</span>
+                </div>
+                <p class="edu-major">计算机应用技术专业</p>
+                <ul class="edu-list">
+                    <li>Python程序设计：90分</li>
+                    <li>Java面向对象程序设计：88分</li>
+                    <li>数据库原理与应用：87分</li>
+                    <li>计算机网络技术：实训考核 85分</li>
+                    <li>Web前端实训：89分</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 关于我 -->
+        <section id="about" class="card">
+            <h2>关于我</h2>
+            <p class="about-text">
+                我是余磊烨，福州墨尔本理工职业学院计算机应用技术专业学生，求职方向为 Java 后端开发实习生。
+                在校期间完成了 Java、MySQL、SSM 框架、Web 前端等课程项目，具备基础的后端接口开发和数据库设计能力。
+                我做事细致，喜欢在项目中验证知识点，也愿意通过阅读文档和动手练习补充技术能力。
+            </p>
+            <p class="about-text">
+                暂无专业相关认证证书，但我已在素材库和个人主页中整理了全部可证明的课程成绩、项目代码、校园实践与公众号内容，
+                所有经历均能提供代码、报告、发布记录或工作记录作为证明。
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 余磊烨 · Java后端开发实习生求职主页</p>
+        <p>邮箱：1609840@qq.com | 福州</p>
+    </footer>
+
+    <script>
+        function copyEmail() {
+            const email = '1609840@qq.com';
+            navigator.clipboard.writeText(email).then(function () {
+                alert('邮箱已复制：1609840@qq.com');
+            }).catch(function () {
+                alert('复制失败，请手动复制：1609840@qq.com');
+            });
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
